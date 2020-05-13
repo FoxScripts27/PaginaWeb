@@ -127,13 +127,15 @@ var maxParticles, particleBreakDistance, repelDist;
 var particles = [];
 
 function centerCanvas() {
-  var x = (windowWidth ) / 2;
-  var y =0;
+  
  
 }
 
 function setup() {
   cnv = createCanvas(windowWidth/2, windowHeight);
+	var x = (windowWidth ) / 2;
+  var y =0;
+	cnv.position(x, y);
 
 
 
