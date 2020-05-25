@@ -5,12 +5,12 @@ var particles = [];
 
 function centerCanvas() {
   var x = (windowWidth ) / 2;
-  var y =0;
+  var y =50;
   cnv.position(x, y);
 }
 
 function setup() {
-  cnv = createCanvas(windowWidth/2, windowHeight);
+  cnv = createCanvas(windowWidth/2, windowHeight-50);
   centerCanvas();
 
 
