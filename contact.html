@@ -20,8 +20,11 @@
 
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
 
+
+	<script src="js/arbol.js"></script>
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -46,22 +49,24 @@
 			</div>
 		</div>
 		<ul class="main-menu">
-			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html" class="active">Inicio</a></li>
+			<li><a href="about.html">Conóceme</a></li>
 			<li><a href="portafolio.html">Portafolio</a></li>
-			<li><a href="contact.html" class="active">Contact</a></li>
+			<li><a href="contact.html">Contáctame</a></li>
+			
 		</ul>
 		<div class="menu-footer">
 			<div class="footer-social">
-				<a href="#">Facebook</a>
-				<a href="#">Instagram</a>
-				<a href="#">GitHub</a>
+				<a href="https://www.linkedin.com/in/sebastian-gutierrez-3b19601ab/">Linkedin</a>
+				<a href="https://www.instagram.com/foxscripts/">Instagram</a>
+				<a href="https://github.com/FoxScripts27">GitHub</a>
 			</div>
 			
 		</div>
 	</div>
 	<!-- Offcanvas Menu Section end -->
 	
-	<!-- Header section -->
+	<!- Header section -->
 	<header class="header-section">
 		<a href="./index.html" class="site-logo">
 			<img src="img/logo.png" alt="">
@@ -72,56 +77,77 @@
 	</header>
 	<!-- Header section end -->
 
-	<!-- Contact section -->
-	<section class="contact-section">
-		<div class="contact-warp set-bg" data-setbg="img/blog/big-01.jpg">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<div class="contact-info">
-							<h4>Informacion</h4>
-							<div class="ci-item"><i class="icon_phone" style="color:#a1ffff;" ></i>(+57) 320-805-8847</div>
-							<div class="ci-item"><i class="icon_mail" style="color:#a1ffff;"></i>scriptsfox@gmail.com</div>
-							<div class="ci-item"><i class="icon_mail" style="color:#a1ffff;"></i>jsgutierrez@academia.usbbog.edu.co</div>
-						</div>
-						<div class="contact-info">
-							<h4>Address</h4>
-							<div class="ci-item"><i class="icon_pin" style="color:#a1ffff;"></i>Bogota, Colombia</div>
-						</div>
-					</div>
-					<div class="col-lg-7">
-						<form class="contact-form">
-							<label for="y-name">Nombre:</label>
-							<input type="text" id="y-name">
-							<label for="y-email">Correo:</label>
-							<input type="text" id="y-email">
-							<label for="y-msg">Mensaje:</label>
-							<textarea id="y-msg"></textarea>
-							<button class="site-btn" style="background-color:#a1ffff; color: black;">enviar</button>
-						</form>
-					</div>
+	<!-- Hero section -->
+	<section class="hero-section">
+		<div class="hero-slider owl-carousel">
+			<div class="hero-item">
+				<div class="hero-text" >
+					<h2  style="font-size: 40px;" style="color:white;">Informacion</h2>
+					<p>
+						<i class="icon_phone" style="color:#a1ffff;" ></i>
+						  (+57) 320-805-8847
+					</p>
+
+					<p>
+						<i class="icon_mail" style="color:#a1ffff;" ></i>
+						  scriptsfox@gmail.com
+					</p>
+					<p>
+						<i class="icon_mail" style="color:#a1ffff;" ></i>
+						  Juancho960527@gmail.com
+					</p>
+					<p>
+						<i class="icon_document_alt" style="color:#a1ffff;" ></i>
+						  www.linkedin.com/in/sebastian-gutierrez-3b19601ab/
+
+					</p>
+					<h2  style="font-size: 40px;" style="color:white;">Ubicacion</h2>
+					<p>
+						<i class="icon_pin" style="color:#a1ffff;" ></i>
+						  Bogotá, Colombia
+					</p>
+
+					<br><br>				
+
+					
+
+					
+
+					<a href="index.html" class="ht-btn"><i class="arrow_left"  style="color:#00FFFF;"></i>Home </a><br>
+					<a href="portafolio.html" class="ht-btn">Portafolio <i class="arrow_right"  style="color:#00FFFF;"></i></a><br>
+				</div>
+				<div > 
+					<div id="sketch-holder">
+      <!-- Our sketch will go here! -->
+					</div>			
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Contact section end -->
+	<!-- Hero section end -->
 
 	<!-- Footer section -->
 	<footer class="footer-section">
-		<div class="footer-social">
-			<a href="#">Facebook</a>
-			<a href="#">Instagram</a>
-			<a href="#">GitHub</a>
+		<div class="footer-social" >
+			<a href="https://www.linkedin.com/in/sebastian-gutierrez-3b19601ab/">Linkedin</a>
+			<a href="https://www.instagram.com/foxscripts/">Instagram</a>
+			<a href="https://github.com/FoxScripts27">GitHub</a>
 		</div>
+
 	</footer>
 	<!-- Footer section end -->
+
+
 
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/vendor/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/animacion.js"></script>
 	<script src="js/main.js"></script>
 
+
+		
 	</body>
 </html>
