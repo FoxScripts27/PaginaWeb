@@ -7,7 +7,7 @@ anime.timeline({loop: false})
     targets: '.ml4 .letter',
     opacity: [0,1],
     easing: "easeInOutQuad",
-    duration: 2250,
+    duration: 1125,
     delay: (el, i) => 150 * (i+1)
   }).add({
    
